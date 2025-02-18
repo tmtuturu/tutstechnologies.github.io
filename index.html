@@ -4,44 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuts Technologies</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .header {
-            background-color: #007bff;
-            color: white;
+        header {
+            background-color: #333;
+            color: #fff;
             padding: 20px;
             text-align: center;
+            font-size: 24px;
         }
-        .content {
-            padding: 20px;
-        }
-        .footer {
+        nav {
             text-align: center;
             padding: 10px;
-            background-color: #343a40;
+            background-color: #444;
+        }
+        nav a {
             color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 20px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Tuts Technologies</h1>
-        <p>Your go-to solution for tech-related queries and services.</p>
+    <header>
+        Tuts Technologies
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="https://www.facebook.com/YOUR_PAGE" target="_blank">Facebook</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Tuts Technologies</h2>
+        <p>We provide top-notch IT solutions including networking, IT support, server management, and graphic design.</p>
+        
+        <h3 id="services">Our Services</h3>
+        <div class="services">
+            <div class="service">
+                <h4>Networking Solutions</h4>
+                <p>Starlink setups, Unifi Controllers, and bridge networks.</p>
+            </div>
+            <div class="service">
+                <h4>IT Support</h4>
+                <p>Windows, macOS, and Linux installations & troubleshooting.</p>
+            </div>
+            <div class="service">
+                <h4>Graphic Design</h4>
+                <p>Professional branding, logo design, and digital content creation.</p>
+            </div>
+        </div>
     </div>
-    <div class="content">
-        <h2>About Us</h2>
-        <p>We provide expert solutions in technology, software, and more.</p>
-        <h3>Contact Us</h3>
-        <p>Reach us on WhatsApp: <a href="https://wa.me/263784780602">+263784780602</a></p>
-    </div>
-    <div class="footer">
-        <p>&copy; 2025 Tuts Technologies</p>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer>
+        &copy; 2025 Tuts Technologies - All Rights Reserved
+    </footer>
+    <a href="https://wa.me/263784780602" class="whatsapp-btn">💬</a>
 </body>
 </html>
